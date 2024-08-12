@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="row">
+            <div class="row">
+                <h2>Car</h2>
+            </div>
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="row">
+                        <div class="input-group">
+                            <span class="input-group-text" id="inputGroup-sizing-default">VIN Number</span>
+                            <input id="inputVinNumber" type="text" class="form-control"
+                                aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+                        </div>
+                    </div>
+                    <div class="row mt-2">
+                        <div class="input-group">
+                            <span class="input-group-text" id="inputGroup-sizing-default">Car YMM</span>
+                            <input id="vehicleName" type="text" class="form-control" aria-label="Sizing example input"
+                                aria-describedby="inputGroup-sizing-default">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 mt-2 mt-lg-0">
+                    <select id="selectVehicelType" class="form-select block col-lg" aria-label="Default select example">
+                        <option value="0" selected>Sedan/Coupe/Hatchback</option>
+                        <option value="1">SUV/Truck</option>
+                        <option value="2">VAN</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="row">
+                        <h2>Glass</h2>
+                        <div class="row mb-2">
+                            <div class="col">
+                                <span><b>Glass type:</b></span>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input glassType" type="radio" name="flexRadioDefault"
+                                        id="flexRadioDefault1" value="Widnshield" checked>
+                                    <label class="form-check-label" for="flexRadioDefault1">
+                                        Widnshield
+                                    </label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input glassType" type="radio" name="flexRadioDefault"
+                                        id="flexRadioDefault2" value="Door">
+                                    <label class="form-check-label" for="flexRadioDefault2">
+                                        Door
+                                    </label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input glassType" type="radio" name="flexRadioDefault"
+                                        id="flexRadioDefault3" value="Back">
+                                    <label class="form-check-label" for="flexRadioDefault3">
+                                        Back
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="input-group mb-2">
+                                <span class="input-group-text" id="inputGroup-sizing-default">Glass #</span>
+                                <input id="inputGlassPartNumber" type="text" class="form-control"
+                                    aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+                            </div>
+
+                            <div class="input-group mb-2">
+                                <span class="input-group-text" id="inputGroup-sizing-default">Glass Price</span>
+                                <input id="glassPrice" type="text" class="form-control"
+                                    aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+                            </div>
+
+                            <div class="input-group mb-2">
+                                <span class="input-group-text" id="inputGroup-sizing-default">Accessory 1</span>
+                                <input type="text" class="form-control accessoryPrice" aria-label="Sizing example input"
+                                    aria-describedby="inputGroup-sizing-default">
+                            </div>
+
+                            <div class="input-group mb-2">
+                                <span class="input-group-text" id="inputGroup-sizing-default">Accessory 2</span>
+                                <input type="text" class="form-control accessoryPrice" aria-label="Sizing example input"
+                                    aria-describedby="inputGroup-sizing-default">
+                            </div>
+
+                            <div class="input-group mb-2">
+                                <span class="input-group-text" id="inputGroup-sizing-default">Accessory 3</span>
+                                <input type="text" class="form-control accessoryPrice" aria-label="Sizing example input"
+                                    aria-describedby="inputGroup-sizing-default">
+                            </div>
+
+                            <div class="input-group mb-2">
+                                <span class="input-group-text" id="inputGroup-sizing-default">Accessory 4</span>
+                                <input type="text" class="form-control accessoryPrice" aria-label="Sizing example input"
+                                    aria-describedby="inputGroup-sizing-default">
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="row">
+                        <h2>Other</h2>
+                        <div class="row ms-1">
+                            <div class="form-check col-12">
+                                <input id="extraChargeCheckbox" class="form-check-input" type="checkbox" value=""
+                                    id="flexCheckDefault">
+                                <label class="form-check-label" for="flexCheckDefault">Extra charge
+                                    <div class="input-group input-group-sm">
+                                        <span class="input-group-text" id="inputGroup-sizing-sm">$</span>
+                                        <input id="extraChargeInput" type="text" class="form-control"
+                                            aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm"
+                                            disabled value="0">
+                                    </div>
+                                </label>
+                            </div>
+                            <div class="form-check col-12">
+                                <input id="fuelChargeCheckbox" class="form-check-input" type="checkbox" value=""
+                                    id="flexCheckDefault">
+                                <label class="form-check-label" for="flexCheckDefault">Fuel charge
+                                    <div class="input-group input-group-sm">
+                                        <span class="input-group-text" id="inputGroup-sizing-sm">$</span>
+                                        <input id="fuelChargeInput" type="text" class="form-control"
+                                            aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm"
+                                            disabled value="0">
+                                    </div>
+                                </label>
+                            </div>
+                            <div class="form-check col-12">
+                                <input id="withoutInstallationCheckbox" class="form-check-input" type="checkbox"
+                                    value="" id="flexCheckDefault">
+                                <label class="form-check-label" for="flexCheckDefault">Without Installation
+                                </label>
+                            </div>
+                            <div class="form-check col-12 text-danger">
+                                <input id="posFeeCheckbox" class="form-check-input" type="checkbox" value=""
+                                    id="flexCheckDefault">
+                                <label class="form-check-label" for="flexCheckDefault">POS fee
+                                </label>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row mt-2 ms-1 me-1 mb-2">
+                <button id="getEstimateButton" type="button" class="btn btn-primary" data-bs-toggle="modal"
+                    data-bs-target="#exampleModal">
+                    Get estimate
+                </button>
+            </div>
+
+        </div>
+
+
+
+
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="exampleModalLabel">Summary</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div id="modalVehicleInformation" class="row mb-3">
+                            <p id="modalVehicleName" class="mb-0">Vehicle Name</p>
+                            <p id="modalVinNumber" class="mb-0">VIN #: </p>
+                            <p id="modalGlassType" class="mb-0">Glass type: </p>
+                        </div>
+                        <div id="modalPricing" class="row mb-3">
+                            <p id="modalGlassAndAccessoryPrice" class="mb-0">Glass & Accessories: </p>
+                            <p id="modalReplacementPrice" class="mb-0">Replacement: </p>
+                            <p id="modalFuelChargePrice" class="mb-0">Fueld Charge: </p>
+                            <p id="modalTotalPrice" class="mb-0">Total: </p>
+                        </div>
+                        <div class="row">
+                            <p class="mb-0">Payment type:</p>
+                            <div class="col-12 ms-1">
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="Check">
+                                    <label class="form-check-label" for="inlineCheckbox1">Check</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="Card">
+                                    <label class="form-check-label" for="inlineCheckbox1">Card</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="Cash">
+                                    <label class="form-check-label" for="inlineCheckbox1">Cash</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer d-flex justify-content-between">
+                        <!-- <button type="button" class="btn btn-warning">Copy</button> -->
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <script src="main.js"></script>
+
+</body>
+
+</html>
