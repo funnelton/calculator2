@@ -113,7 +113,7 @@ function calculateGlassPrice(glassPrice, accessoriesPrice) {
         result += Number(elem.value);
     }
 
-    return Number(result.toFixed(2);
+    return Number(result.toFixed(2));
 }
 
 
