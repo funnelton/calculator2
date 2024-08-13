@@ -113,7 +113,7 @@ function calculateGlassPrice(glassPrice, accessoriesPrice) {
         result += Number(elem.value);
     }
 
-    return Number(result.toFixed(2));
+    return result;
 }
 
 
@@ -142,6 +142,7 @@ getEstimateButton.addEventListener('click', function () {
     if (extraChargeCheckbox.checked) {
         modalGlassPrice += Number(extraChargeInput.value);
     }
+    modalGlassPrice = Number(modalGlassPrice.toFixed(2));
     
     
     // Replacement price
